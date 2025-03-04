@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>COSRX Beauty - Home</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: #f9f9f9;
+            color: #333;
+        }
+
+        /* Header */
+        .header {
+            padding: 20px;
+            text-align: center;
+            font-size: 24px;
+            font-weight: bold;
+            background-image: "better.jpg";
+           
+        }
+
+        /* Navigasi */
+        .navbar {
+            display: flex;
+            justify-content: center;
+            background: #ff5a72;
+            padding: 10px 0;
+        }
+
+        .navbar a {
+            color: #f7f1f1;
+            text-decoration: none;
+            padding: 12px 20px;
+            font-size: 16px;
+            transition: 0.3s;
+        }
+
+        .navbar a:hover {
+            background: hwb(1 61% 9%);
+            border-radius: 5px;
+        }
+
+        /* Banner */
+        .banner {
+            width: 100%;
+            
+            background: url('https://www.cosrx.com/cdn/shop/files/COSRX_Banner.jpg?v=1673311633') center/cover;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            color: #ff5a72;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+        }
+
+        .banner button {
+            margin-top: 20px;
+            padding: 12px 24px;
+            font-size: 18px;
+            border: none;
+            background: #ff7eb3;
+            color: white;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .banner button:hover {
+            background: #ff5a72;
+        }
+        .about-text {
+            padding: 16px;
+            margin: 16px;
+            border: 2px solid #000000;
+            border-radius: 10px;
+        }
+        /* Produk */
+        .product-section {
+            text-align: center;
+            padding: 40px 20px;
+        }
+
+        .product-grid {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .product-card {
+            background: white;
+            padding: 15px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+            width: 250px;
+            transition: transform 0.3s ease-in-out;
+            text-align: center;
+        }
+
+        .product-card:hover {
+            transform: scale(1.05);
+        }
+
+        .product-card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+
+        .product-card h3 {
+            font-size: 18px;
+            margin-top: 10px;
+        }
+
+        .product-card p {
+            font-size: 14px;
+            color: gray;
+        }
+
+        .product-card button {
+            margin-top: 10px;
+            padding: 8px 16px;
+            font-size: 16px;
+            border: none;
+            background: #ff758c;
+            color: white;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
+        .product-card button:hover {
+            background: #ff5a72;
+        }
+
+        /* Footer */
+        .footer {
+            margin-top: 30px;
+            padding: 15px;
+            background: linear-gradient(135deg, #ff758c, #ff7eb3);
+            color: white;
+            text-align: center;
+            font-size: 14px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+    </style>
+</head>
+
+<body>
+    <div class="navbar">
+        <a href="index.html">Home</a>
+        <a href="contact.html">Contact</a>
+        <a href="about.html">About</a>
+    </div>
+
+    <div class="banner">
+        <div>
+           
+            <div> <img src="background cosrx.jpeg" alt="background"width=1500 height="400"></div>
+            
+            <button onclick="window.location.href='#produk'">Lihat Produk</button>
+        </div>
+    </div>
+    <div class="about-section">
+        <center><h2>Apaitu COSRX?</h2></center>
+        <p class="about-text">
+            COSRX adalah brand skincare asal Korea Selatan yang diformulasikan khusus untuk mencapai skin goals-mu.
+            Dengan tagline Expecting Tomorrow, sejak 2014 COSRX terus berinovasi menghadirkan solusi skincare untuk semua jenis kulit. COSRX mempunyai visi untuk meningkatkan rasa percaya diri dan memancarkan kecantikan alami setiap penggunanya.
+            Skincare COSRX hanya menggunakan bahan alami yang essential & aman untuk kulit. Sampai sekarang, skincare COSRX sudah menjadi favorit banyak orang—tidak hanya di Korea Selatan dan Indonesia, tetapi juga di luar Asia seperti Amerika Serikat dan Perancis.
+
+        </p>
+    
+    </div>
+    <div class="product-section" id="produk">
+        <h2>Produk Unggulan</h2>
+        <div class="product-grid">
+            <div class="product-card">
+                <img src="mucin.jpg" alt="Snail Mucin Essence" width="300" height="300">
+                <h3>Snail Mucin Essence</h3>
+                <p>Melembapkan & memperbaiki kulit rusak</p>
+                <p>Rp 220.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+            <div class="product-card">
+                <img src="ahbha.jpg" alt="AHA/BHA Toner" width="300" height="300">
+                <h3>AHA/BHA Toner</h3>
+                <p>Eksfoliasi lembut untuk kulit cerah
+
+                </p>
+                <p>Rp 190.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+            <div class="product-card">
+                <img src="fw.jpg" alt="Low pH Cleanser" width="300" height="300">
+                <h3>Low pH Cleanser</h3>
+                <p>Pembersih wajah lembut untuk semua jenis kulit</p>
+                <p>Rp 100.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+            <div class="product-card">
+                <img src="ss.jpg" alt="Aloe Soothing Sun Cream" width="300" height="300">
+                <h3>Aloe Soothing Sun Cream</h3>
+                <p>Melindungi dari sinar UVA/UVB</p>
+                <p>Rp 130.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+            <div class="product-card">
+                <img src="mois.jpg" alt="OIL-FREE-Ultra Moisturizing Lotion" width="300" height="300">
+                <h3>OIL-FREE-Ultra Moisturizing Lotion</h3>
+                <p>Melembabkan dan Menutrisi Kulit</p>
+                <p>Rp 200.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+            <div class="product-card">
+                <img src="krim.jpg" alt="Advanced Snail 92 All in One Cream" width="300" height="300">
+                <h3>Advanced Snail 92 All in One Cream</h3>
+                <p>Melembutkan dan Meremajakan Kulit</p>
+                <p>Rp 230.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+            <div class="product-card">
+                <img src="patch.jpg" alt="Acne Pimple Patch" width="300" height="300">
+                <h3>Acne Pimple Patch</h3>
+                <p>Perawatan Jerawat Malam</p>
+                <p>Rp 45.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+            <div class="product-card">
+                <img src="centella.jpg" alt="Centella Blemish Cream" width="300" height="300">
+                <h3>Centella Blemish Cream</h3>
+                <p>Menyamarkan Noda Hitam Bekas Jerawat</p>
+                <p>Rp 190.000</p>
+                <button>Beli Sekarang</button>
+            </div>
+            <div class="product-card">
+                <img src="cica pad.jpg" alt="Pure Fit Cica Pad" width="300" height="300">
+                <h3>Pure Fit Cica Pad</h3>
+                <p>Menenangkan Kemerahan</p>
+                <p>Rp 285.000 </p>
+                <button>Beli Sekarang</button>
+            </div>
+            <div class="product-card">
+                <img src="snail hydro.jpg" alt="Advance Snail Hydrogel Eye Patch" width="300" height="300">
+                <h3>Advance Snail Hydrogel Eye Patch</h3>
+                <p>Menghidrasi Kulit dan Menenangkan Area Mata</p>
+                <p>Rp 239.000 </p>
+                <button>Beli Sekarang</button>
+            </div>
+            <div class="product-card">
+                <img src="acid 3.jpg" alt="The Hyaluronic Acid 3 Serum" width="300" height="300">
+                <h3>The Hyaluronic Acid 3 Serum</h3>
+                <p>Menghidrasi dan Merawat Kulit</p>
+                <p>Rp 230.000 </p>
+                <button>Beli Sekarang</button>
+            </div>
+            <div class="product-card">
+                <img src="niacin 15.jpg" alt="The Niacinamide 15 Serum" width="300" height="300">
+                <h3>The Niacinamide 15 Serum</h3>
+                <p> Merawat Kulit Berjerawat dan Menyamarkan Pori-pori</p>
+                <p>Rp 275.000 </p>
+                <button>Beli Sekarang</button>
+            </div>
+            <div class="product-card">
+                <img src="vit c.jpg" alt="Refresh AHA BHA Vitamin C " width="300" height="300">
+                <h3>Refresh AHA BHA Vitamin C </h3>
+                <pMencerahkan Kulit Kusam></p>
+                <p>Rp 233.000 </p>
+                <button>Beli Sekarang</button>
+            </div>
+            <div class="product-card">
+                <img src="snail cleanser.jpg" alt="Advanced Snail Mucin Cleanser " width="300" height="300">
+                <h3>embersihkan Kulit secara Lembut</h3>
+                <p>Mencerahkan Kulit Kusam</p>
+                <p>Rp 217.000 </p>
+                <button>Beli Sekarang</button>
+            </div>
+            <div class="product-card">
+                <img src="centella water.jpg" alt="Centella Water Alcohol-Free Toner " width="300" height="300">
+                <h3>Centella Water Alcohol-Free Toner</h3>
+            <p>Menenangkan Kulit</p>
+                <p>Rp 215.000 </p>
+                <button>Beli Sekarang</button>
+
+            </div>
+
+            </div>
+        </div>
+
+    </div>
+
+    <div class="footer">
+        Hak Cipta &copy; 2025 Nabilah, wibi, Kevin
+    </div>
+
+</body>
+</html>
